@@ -1,6 +1,25 @@
 body {
-    background-color: rgb(243, 235, 235);
+    background-color: #edf6ea;
 }
+
 h1{
     color:rgb(147, 104, 196);
+}
+
+
+h1, h2, p {
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    color: rgb(24, 20, 24);
+
+}
+
+.description p {
+    width: 600px;
+
+}
+
+.left {
+    width: 600px;
+    float: left;
 }
