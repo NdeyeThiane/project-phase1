@@ -9,24 +9,30 @@ h1{
 
 h1, h2, p {
     font-size: large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-    color: rgb(24, 20, 24);
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(98, 73, 98);
 }
 
 .description p {
     width: 600px;
 
 }
+a:hover{
+    color: blueviolet;
+}
+
 
 .left {
     width: 600px;
     float: left;
-    
+    margin-left: 60px; 
 }
 
 .rigth {
-    width: 60px;
+    width: 600px;
     float: right;
-    margin-left: 30px;
+    
+}
+ input {
+    display: block;
 }
