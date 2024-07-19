@@ -22,4 +22,11 @@ h1, h2, p {
 .left {
     width: 600px;
     float: left;
+    
+}
+
+.rigth {
+    width: 60px;
+    float: right;
+    margin-left: 30px;
 }
