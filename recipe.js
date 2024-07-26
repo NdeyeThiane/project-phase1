@@ -1,11 +1,17 @@
-let newListItem = document.createElement("li");
-newListItem.innerHTML = "Sugar";
-document.getElementById("ingredients").appendChild(newListItem);
+
+let ul = document.getElementById("ingredients");
+
+let li = document.createElement("li");
+li.innerHTML = "Sugar";
+ul.appendChild(li);
+
+
+
+
 
 //let ul = document.getElementsByTagName("ul");
-let div = document.getElementsByClassName("divLi");
-/*
 
+/*
 let label = document.createElement("label");
 let check = document.createElement("input");
 
