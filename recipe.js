@@ -6,33 +6,21 @@ li.innerHTML = "Sugar";
 ul.appendChild(li);
 
 
+let list = Array.from(ul.getElementsByTagName("li"));
 
 
-
-//let ul = document.getElementsByTagName("ul");
-
-/*
-let label = document.createElement("label");
-let check = document.createElement("input");
-
-
-
-for(let i = 0; i<ul.length; i++){
-  check.type="checkbox";
-  check.id="check";
-  check.name="checkb";
-  label.innerHTML = ul[i];
-  label.htmlFor ="check";
-  ul.appendChild(label);
-  ul.appendChild(check);
+for(let i=0; i<list.length; i++){
+  let text = list[i].innerHTML;
+  list[i].innerHTML="";
+  let label = document.createElement("label");
+  label.htmlFor = "check";
+  let input = document.createElement("input");
+  input.id = "check";
+  input.type="checkbox";
+  input.name="name";
+  label.innerHTML =text;
+  list[i].appendChild(input);
+  list[i].appendChild(label);
 }
-div.appendChild(ul);
-*/
 
-// let aTag = document.getElementsByTagName("tagsForRecipe");
 
-// for(let i = 0; i<aTag.length; i++){
-//     aTag[i].addEventListener('mouseenter', function () {
-//     document.body.style.color ="green";
-//   })
-// }
