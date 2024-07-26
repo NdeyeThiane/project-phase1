@@ -1,5 +1,4 @@
 * {
-    background-color: #edf6ea;
     box-sizing: border-box;
     margin: 0;
 }
@@ -8,31 +7,95 @@
 .selector-for-some-widget {
     box-sizing: content-box;
   }
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: autofit 1fr 1fr 1fr 1fr;
-    box-sizing: border-box;
-}
-h1, h2, p {
+
+  body {
+    background-color: #edf6ea;;
+  }
+  h2 {
     font-size: large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
     color: rgb(98, 73, 98);
 }
+h1{
+    color: black;
+    background-color: pink;
+
+    
+
+}
+  
+.navbar {
+    /* display: flex; */
+    /* height: 5vh; */
+    /* justify-content: center; */
+    background-color: pink !important;
+    /* flex-grow:1; */
+    /* border: 10px solid green; */
+}
+.navbar-brand {
+    
+}
+
+ .container-content {
+    display:flex;
+    /* justify-content: center;  */
+    height:fit-content;
+    flex-flow: column wrap;
+    align-items: center;
+    /* overflow: hidden; */
+    border: 1px solid green;
+   overflow-y: auto;
+   flex: 0, 1 auto;
+   padding: 5px;
+    
+    
+}
+
+.container-footer {
+    height: 10vh;
+    background-color: pink;
+    
+   
+    
+}
+
+
+/*
+#descrip{
+    display:inline;
+}
+#credits {
+    display: inline;
+}
+
+#image {
+    
+}
+
+
+
+.container-footer {
+    height: 25vh;
+    background-color: pink;
+    
+   
+    
+}
+
 .top{
     grid-column: 1;
     grid-row: 1;
     
 }
+    */
+
 h1{
-    justify-items: center;
     background-color: pink;
     color: black;
-    justify-content: center;
 
-}
+} */
 
-    
+ /*   
 .left{
     grid-column: 1;
     grid-row: 2;
@@ -49,6 +112,7 @@ h1{
 .divli {
 }
 */
+/*
 .right {
     grid-column: 2;
     grid-row: 2;
@@ -68,13 +132,14 @@ h1{
 
 
 }
+*/
 /* a:hover{
     color: blueviolet;
 }
 
 
 .left {
-    width: 600px;
+    width: 600px;        
     float: left;
     margin-right: 30px;
  
@@ -89,4 +154,29 @@ h1{
     
 } */
 
+
+@include media-breakpoint-up(sm) {
+  .some-class {
+    display: block;
+  }
+}
+
  
+ @media (max-width: 576px) {
+
+
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+    
+}
+
+
+@media (min-width: 1200px) {
+    
+} 
