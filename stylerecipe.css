@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 2px solid green;
 }
 ::before
 ::after
@@ -95,88 +96,60 @@ h1{
 
 } */
 
- /*   
-.left{
-    grid-column: 1;
-    grid-row: 2;
-    
-}
-/*
-.image {
-    justify-content: center;
-    padding: 0px;
-    margin-right:0;
-    margin: 0;
-}
-
-.divli {
-}
-*/
-/*
-.right {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.tagsForRecipe {
-
-}
-.inputs {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-
-
-.description p {
-
-
-}
-*/
-/* a:hover{
-    color: blueviolet;
-}
-
-
-.left {
-    width: 600px;        
-    float: left;
-    margin-right: 30px;
- 
-   
-}
-
-
-.rigth {
-    width: 600px;
-    float: right;
-    margin-left: 30px;
-    
-} */
-
-
-@include media-breakpoint-up(sm) {
-  .some-class {
-    display: block;
-  }
-}
-
- 
- @media (max-width: 576px) {
-
-
-
-}
+{}
 
 @media (min-width: 768px) {
+   
+    .container-content {
+        display:flex;
+        flex-flow:column wrap;
+        font-size:x-large;
+        flex:0,1, auto;
+        padding: 10px;
+    }
 
-}
+    .imag img {
+        width: 600px;
+    }
 
-@media (min-width: 992px) {
+    .subcon {
+        display:flex;
+        flex-wrap:wrap;
+        align-self: flex-start;
+        
+       
+
+    }
+    #ingredients {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+
+        
+        
+        
+    }
+
+    h2 {
+        font-size: x-large;
+    }
     
 }
+
 
 
 @media (min-width: 1200px) {
     
+    
 } 
+
+
+
+
+
+
+
+
+
+
+
+
